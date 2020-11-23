@@ -43,7 +43,10 @@ struct PokemonCell: View {
         }
         .background(Color(viewModel.backgroundColor(forType: pokemon.type)))
         .cornerRadius(12)
-        .shadow(color: .green, radius: 6, x: 0.0, y: 0.0)
+        .shadow(color: Color(viewModel.backgroundColor(forType: pokemon.type)),
+                radius: 6,
+                x: 0.0,
+                y: 0.0)
     }
 }
 
