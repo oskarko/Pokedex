@@ -22,6 +22,13 @@
 		E266F7FB256BCFCF004EA4EF /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266F7FA256BCFCF004EA4EF /* PokemonViewModel.swift */; };
 		E266F7FC256BCFCF004EA4EF /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266F7FA256BCFCF004EA4EF /* PokemonViewModel.swift */; };
 		E266F801256BDBF1004EA4EF /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E266F800256BDBF1004EA4EF /* KingfisherSwiftUI */; };
+		E2ADAD17256C295300923C23 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADAD16256C295300923C23 /* NavigationLazyView.swift */; };
+		E2ADAD1D256C297400923C23 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADAD1C256C297400923C23 /* PokemonDetailView.swift */; };
+		E2ADAD21256C299E00923C23 /* PokemonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADAD20256C299E00923C23 /* PokemonCellViewModel.swift */; };
+		E2ADAD25256C2A4000923C23 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADAD24256C2A4000923C23 /* BarView.swift */; };
+		E2ADAD29256C2A6300923C23 /* FloatingFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADAD28256C2A6300923C23 /* FloatingFilterButton.swift */; };
+		E2ADAD37256C2C3400923C23 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = E2ADAD36256C2C3400923C23 /* ASCollectionView */; };
+		E2ADAD3E256C2C7E00923C23 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = E2ADAD3D256C2C7E00923C23 /* QGrid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,11 @@
 		E266F7F0256B93BB004EA4EF /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
 		E266F7F5256B95B7004EA4EF /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		E266F7FA256BCFCF004EA4EF /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		E2ADAD16256C295300923C23 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		E2ADAD1C256C297400923C23 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+		E2ADAD20256C299E00923C23 /* PokemonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCellViewModel.swift; sourceTree = "<group>"; };
+		E2ADAD24256C2A4000923C23 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		E2ADAD28256C2A6300923C23 /* FloatingFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingFilterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2ADAD3E256C2C7E00923C23 /* QGrid in Frameworks */,
 				E266F801256BDBF1004EA4EF /* KingfisherSwiftUI in Frameworks */,
+				E2ADAD37256C2C3400923C23 /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +85,7 @@
 		E266F7B9256B8EBB004EA4EF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E2ADAD15256C294600923C23 /* Utils */,
 				E266F7E8256B8EFD004EA4EF /* Model */,
 				E266F7E7256B8EF2004EA4EF /* View */,
 				E266F7DD256B8ED3004EA4EF /* ViewModel */,
@@ -111,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E266F7FA256BCFCF004EA4EF /* PokemonViewModel.swift */,
+				E2ADAD20256C299E00923C23 /* PokemonCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -120,6 +136,9 @@
 			children = (
 				E266F7E9256B8F41004EA4EF /* PokemonCell.swift */,
 				E266F7F0256B93BB004EA4EF /* PokedexView.swift */,
+				E2ADAD1C256C297400923C23 /* PokemonDetailView.swift */,
+				E2ADAD24256C2A4000923C23 /* BarView.swift */,
+				E2ADAD28256C2A6300923C23 /* FloatingFilterButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +149,14 @@
 				E266F7F5256B95B7004EA4EF /* Pokemon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E2ADAD15256C294600923C23 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2ADAD16256C295300923C23 /* NavigationLazyView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +177,8 @@
 			name = "PokedexSwifttUI (iOS)";
 			packageProductDependencies = (
 				E266F800256BDBF1004EA4EF /* KingfisherSwiftUI */,
+				E2ADAD36256C2C3400923C23 /* ASCollectionView */,
+				E2ADAD3D256C2C7E00923C23 /* QGrid */,
 			);
 			productName = "PokedexSwifttUI (iOS)";
 			productReference = E266F7C1256B8EBC004EA4EF /* PokedexSwifttUI.app */;
@@ -200,6 +229,8 @@
 			mainGroup = E266F7B4256B8EBB004EA4EF;
 			packageReferences = (
 				E266F7FF256BDBF1004EA4EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E2ADAD35256C2C3400923C23 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+				E2ADAD3C256C2C7E00923C23 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = E266F7C2256B8EBC004EA4EF /* Products */;
 			projectDirPath = "";
@@ -236,9 +267,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E266F7F6256B95B7004EA4EF /* Pokemon.swift in Sources */,
+				E2ADAD1D256C297400923C23 /* PokemonDetailView.swift in Sources */,
 				E266F7CF256B8EBC004EA4EF /* ContentView.swift in Sources */,
 				E266F7FB256BCFCF004EA4EF /* PokemonViewModel.swift in Sources */,
+				E2ADAD25256C2A4000923C23 /* BarView.swift in Sources */,
+				E2ADAD17256C295300923C23 /* NavigationLazyView.swift in Sources */,
 				E266F7CD256B8EBC004EA4EF /* PokedexSwifttUIApp.swift in Sources */,
+				E2ADAD21256C299E00923C23 /* PokemonCellViewModel.swift in Sources */,
+				E2ADAD29256C2A6300923C23 /* FloatingFilterButton.swift in Sources */,
 				E266F7EA256B8F41004EA4EF /* PokemonCell.swift in Sources */,
 				E266F7F1256B93BB004EA4EF /* PokedexView.swift in Sources */,
 			);
@@ -505,6 +541,22 @@
 				minimumVersion = 5.15.7;
 			};
 		};
+		E2ADAD35256C2C3400923C23 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+		E2ADAD3C256C2C7E00923C23 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -512,6 +564,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E266F7FF256BDBF1004EA4EF /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
+		};
+		E2ADAD36256C2C3400923C23 /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2ADAD35256C2C3400923C23 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+		E2ADAD3D256C2C7E00923C23 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2ADAD3C256C2C7E00923C23 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
