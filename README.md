@@ -2,8 +2,8 @@
 Project developed with SwiftUI 2.0 + MVVM pattern + Network Layer + iOS 14 + Swift 5
 
 
-![alt tag1](images/image01.png)
-![alt tag2](images/image02.png)
+![alt tag1](images/pokedex_01.png)
+![alt tag2](images/pokedex_03.png)
 
 Visit my blog for more info: [www.oscargarrucho.com](http://www.oscargarrucho.com/)
 
